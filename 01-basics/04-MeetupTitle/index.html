@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MeetupTitle</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <label v-for="n in 5" :key=n><input v-model="meetupId" type="radio" :value="n"/> {{ n }}</label>
+
+        <hr />
+
+        <h3>{{ title }}</h3>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
